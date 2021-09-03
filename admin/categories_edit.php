@@ -8,12 +8,6 @@ if (isset($_GET['edit'])) {
   $edit_cat = "SELECT * FROM categories WHERE cat_id='{$edit_cat_id}'";
   $edit_cat_res = mysqli_query($connection, $edit_cat);
 
-
-  // if (!$delete_cat_res) {
-  //   die("Query fail" . mysqli_error($connection));
-  // }
-
-  // header("Location: categories.php"); //redirect to categories.php page if the page is not refresh automatically
 }
 
 ?>
